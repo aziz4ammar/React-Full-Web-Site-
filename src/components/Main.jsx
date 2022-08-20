@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const Main = ({el}) => {
   return (
     <div>
-         <div id="deal">
+         <div>
              <Card style={{ width: '18rem' }}>
                    <Card.Img variant="top" src={el.image} />
                    <Card.Body>

@@ -2,7 +2,7 @@ import React from 'react'
 import Main from './Main'
 const List = ({info}) => {
   return (
-    <div>
+    <div id='deal'>
         {
         info.map((el,i)=><Main el={el} key={i}/>)
         }
