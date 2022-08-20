@@ -23,14 +23,45 @@ name:"Itunes Gift Card",Price:"10$",rating:5,
     name:"Itunes Gift Card",Price:"50$",rating:5,
 },
 {id:Math.random() , image:"https://assets.wakefern.com/is/image/wakefern/76750183256-001?$Mi9Product_detail$",
-name:"visa Gift Card",Price:"50$",rating:5,
+name:"Visa Gift Card",Price:"50$",rating:5,
 },
 {
     id:Math.random(),image:"https://assets.wakefern.com/is/image/wakefern/76750183263-001?$Mi9Product_detail$" ,
-    name:"visa Gift Card",Price:"100$",rating:5,
+    name:"Visa Gift Card",Price:"100$",rating:5,
 },
 {
     id:Math.random() ,image:"https://www.ubuy.tn/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvODE3V0VzUkI5NEwuX1NMMTUwMF8uanBn.jpg",
-    name:"visa Gift Card",Price:"200$",rating:5,
+    name:"Visa Gift Card",Price:"200$",rating:5,
+},
+
+
+
+{id:Math.random() , image:"https://auspost.com.au/shop/static/WFS/AusPost-Shop-Site/-/AusPost-Shop/en_AU/product/059069733-AusPost/2/resized_1500x1500.png",
+name:"Netflix Gift Card",Price:"30$",rating:5,
+},
+{
+    id:Math.random(),image:"https://auspost.com.au/shop/static/WFS/AusPost-Shop-Site/-/AusPost-Shop/en_AU/product/059069733-AusPost/2/resized_1500x1500.png" ,
+    name:"Netflix Gift Card",Price:"50$",rating:5,
+},
+{
+    id:Math.random() ,image:"https://auspost.com.au/shop/static/WFS/AusPost-Shop-Site/-/AusPost-Shop/en_AU/product/059069733-AusPost/2/resized_1500x1500.png",
+    name:"Netflix Gift Card",Price:"100$",rating:5,
+},
+{
+    id:Math.random() ,image:"https://nepalgamermall.com/wp-content/uploads/2020/10/Spotify-Gift-Card.png",
+    name:"Spotify Gift Card",Price:"30$",rating:5,
+},
+{
+    id:Math.random() ,image:"https://nepalgamermall.com/wp-content/uploads/2020/10/Spotify-Gift-Card.png",
+    name:"Spotify Gift Card",Price:"50$",rating:5,
+},
+{
+    id:Math.random() ,image:"https://www.warehousestationery.co.nz/dw/image/v2/AAWO_PRD/on/demandware.static/-/Sites-wsl-master-catalog/default/dw7c615719/dd/b7/W1956766_00.jpg?sw=484&sh=484&sm=fit",
+    name:"Steam Gift Card",Price:"20$",rating:5,
+},
+{
+    id:Math.random() ,image:"https://multimedia.bbycastatic.ca/multimedia/products/300x300/103/10341/10341351.jpg",
+    name:"Steam Gift Card",Price:"50$",rating:5,
 },
 ]
+
