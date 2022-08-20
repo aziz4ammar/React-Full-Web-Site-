@@ -53,6 +53,10 @@ name:"Netflix Gift Card",Price:"30$",rating:5,
 },
 {
     id:Math.random() ,image:"https://nepalgamermall.com/wp-content/uploads/2020/10/Spotify-Gift-Card.png",
+    name:"Spotify Gift Card",Price:"100$",rating:5,
+},
+{
+    id:Math.random() ,image:"https://nepalgamermall.com/wp-content/uploads/2020/10/Spotify-Gift-Card.png",
     name:"Spotify Gift Card",Price:"50$",rating:5,
 },
 {
@@ -62,6 +66,10 @@ name:"Netflix Gift Card",Price:"30$",rating:5,
 {
     id:Math.random() ,image:"https://multimedia.bbycastatic.ca/multimedia/products/300x300/103/10341/10341351.jpg",
     name:"Steam Gift Card",Price:"50$",rating:5,
+},
+{
+    id:Math.random() ,image:"https://90a1c75758623581b3f8-5c119c3de181c9857fcb2784776b17ef.ssl.cf2.rackcdn.com//456129_895763_01_front_zoom.jpg",
+    name:"Steam Gift Card",Price:"100$",rating:5,
 },
 ]
 
