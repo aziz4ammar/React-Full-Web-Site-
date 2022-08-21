@@ -75,9 +75,6 @@
   margin-top: -30px;
   margin-left: 150px;
 }
-.azer{
-  margin-top:-20px ;
-}
 
 
 
@@ -100,26 +97,7 @@ nav{
   background-color: white;
   z-index: 999;
 }
-.list{
-  display: flex;
-  list-style: none;
-  padding-left: 420px;
-  position: relative;
-}
-#li1{
-  display: flex;
-  margin-right: 100px;
-  margin-left: -320px;
-  text-decoration: underline;
-}
-#li2{
-  margin-right: 100px;
-  margin-left: -150px;
-  text-decoration: underline;
-}
 #li3{
-  text-decoration: underline;
-  position: relative;
   list-style: none;
   margin-top: 12px;
   margin-left: 50px;
@@ -130,22 +108,3 @@ nav{
   font-weight: bold;
   color:#ffffff;
 }
-.list2{
-  display: none;
-  position: absolute;
-  flex-direction: column;
-  list-style: none;
-  color:#4f4c4c; 
-  background-color: rgb(240, 234, 221);
-  align-items:flex-start;
-  width: 250px;
-  padding-left: 10px;
-
-  
-}
-.second-list{
-  color:darkred;
-}   
-#li3:hover .list2{
-  display: flex;
-} 

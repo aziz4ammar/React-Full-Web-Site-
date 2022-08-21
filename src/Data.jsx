@@ -53,11 +53,11 @@ name:"Netflix Gift Card",Price:"30$",rating:5,
 },
 {
     id:Math.random() ,image:"https://nepalgamermall.com/wp-content/uploads/2020/10/Spotify-Gift-Card.png",
-    name:"Spotify Gift Card",Price:"100$",rating:5,
+    name:"Spotify Gift Card",Price:"50$",rating:5,
 },
 {
     id:Math.random() ,image:"https://nepalgamermall.com/wp-content/uploads/2020/10/Spotify-Gift-Card.png",
-    name:"Spotify Gift Card",Price:"50$",rating:5,
+    name:"Spotify Gift Card",Price:"100$",rating:5,
 },
 {
     id:Math.random() ,image:"https://www.warehousestationery.co.nz/dw/image/v2/AAWO_PRD/on/demandware.static/-/Sites-wsl-master-catalog/default/dw7c615719/dd/b7/W1956766_00.jpg?sw=484&sh=484&sm=fit",
