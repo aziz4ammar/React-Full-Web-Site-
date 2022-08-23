@@ -11,7 +11,7 @@ const Main = ({el}) => {
                    <Card.Body>
                      <Card.Title>{el.name}</Card.Title>
                      <Card.Text>{el.Price} </Card.Text>
-                     <Button variant="primary">Go somewhere</Button>
+                     <Button variant="primary">Add To Cart</Button>
                    </Card.Body>
                  </Card>
          </div>

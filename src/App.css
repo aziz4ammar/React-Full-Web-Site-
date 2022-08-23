@@ -55,7 +55,6 @@
 .haha{
   display: flex;
   flex-direction: row;
-  position: fixed;
   width: 100%;
   margin-right: -600px;
   z-index: 999;
@@ -107,4 +106,16 @@ nav{
   font-size: 19px;
   font-weight: bold;
   color:#ffffff;
+}
+@media only screen and (min-width: 300px) and (max-width: 1600px) {
+  nav{
+      width: auto;
+  }
+  #li3{
+    margin-left: -300px;
+}
+.rbg{
+  width: 100px;
+  margin-left: 100px;
+}
 }

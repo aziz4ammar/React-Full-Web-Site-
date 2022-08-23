@@ -8,7 +8,7 @@ import Head from './components/Head';
 function App() {
   const [info, setInfo] = useState(tab)
   return (
-    <div>
+    <div className='ap'>
       <div className='ba'>
       <Head/>
       </div>
