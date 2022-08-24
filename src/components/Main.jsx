@@ -13,7 +13,7 @@ const Main = ({el}) => {
                    <Card.Img variant="top" src={el.image} />
                    <Card.Body>
                      <Card.Title>{el.name}</Card.Title>
-                     <Card.Text>{el.Price} </Card.Text>
+                     <Card.Text>{el.Price}$ </Card.Text>
                      <Button onClick={()=>dispatch(add(el))} variant="primary">Add To Cart</Button>
                    </Card.Body>
                  </Card>

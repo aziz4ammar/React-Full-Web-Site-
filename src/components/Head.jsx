@@ -1,7 +1,10 @@
 import React from 'react'
 import { BrowserRouter,Link } from 'react-router-dom';
 import abb from './img/abb.png';
+import { useDispatch,useSelector } from 'react-redux'
+
 const Head = () => {
+  const state = useSelector(state=>state)
 
   return (
     <div>
@@ -20,7 +23,7 @@ const Head = () => {
             <ul>
             <li id="li3" class="navbarlist">Services
                 <img src="" alt="" />
-                <h3 className='aqw'>0</h3>
+                <h3 className='aqw'>{state.length}</h3>
             </li>
             </ul>
             <Link to="/cart">
