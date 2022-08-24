@@ -15,9 +15,11 @@ import "./mcart.css"
 import { useDispatch,useSelector } from 'react-redux'
 import { Link } from 'react-router-dom';
 import Head from "./Head";
+import { del } from "../redux/actions";
 
 export default function CartCheckout() {
     const state = useSelector(state=>state)
+    const dispatch = useDispatch()
   console.log(state)
   return (
     <div>
@@ -50,11 +52,11 @@ export default function CartCheckout() {
                           alt="Generic placeholder image"
                         />
                       </div>
-
+                            
                       <div className="flex-grow-1 ms-3">
-                        <a href="#!" className="float-end text-black">
+                        <button onClick={()=>dispatch(del(el.id))} className="float-end text-black">
                           <MDBIcon fas icon="times" />
-                        </a>
+                        </button>
                         <MDBTypography tag="h5" className="text-primary">
                           {el.name}
                         </MDBTypography>
