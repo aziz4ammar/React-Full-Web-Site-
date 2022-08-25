@@ -68,7 +68,7 @@ export default function CartCheckout() {
                             <input
                               className="quantity fw-bold text-black"
                               min={0}
-                              defaultValue={1}
+                              defaultValue={el.cont}
                               type="number"
                             />
                             <button className="plus"></button>
