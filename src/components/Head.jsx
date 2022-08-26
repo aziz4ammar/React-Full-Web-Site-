@@ -21,7 +21,7 @@ const Head = () => {
           </div>
           <div>
             <ul>
-            <li id="li3" class="navbarlist">Services
+            <li id="li3" class="navbarlist">
                 <img src="" alt="" />
                 <h3 className='aqw'>{state.length}</h3>
             </li>
