@@ -6,6 +6,7 @@ import List from './components/List';
 import Head from './components/Head';
 import Mcart from './components/Mcart';
 import { BrowserRouter,Route,Routes } from 'react-router-dom';
+import Foot from './components/Foot';
 function App() {
   const [info, setInfo] = useState(tab)
   return (
@@ -16,6 +17,9 @@ function App() {
     <Route path='/cart' element={<Mcart/>}/>
     </Routes>
     </BrowserRouter>
+    <br/>
+    <br/>
+    <Foot/>
     </div>
   
   );
