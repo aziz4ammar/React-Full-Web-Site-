@@ -6,7 +6,7 @@ import { useDispatch,useSelector } from 'react-redux'
 
 const Head = () => {
   const state = useSelector(state=>state)
-  const [text,setText] = useState("")
+  
   return (
     <div>
       <header>
@@ -17,7 +17,7 @@ const Head = () => {
           </div>
           </Link>
           <div>
-            <input className='rbg' type="text" placeholder='Search' value={text} onChange={(e)=>setText(e.target.value)}/>
+            <input className='rbg' type="text" placeholder='Search'/>
           </div>
           <div>
             <ul>

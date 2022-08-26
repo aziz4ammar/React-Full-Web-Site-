@@ -14,13 +14,12 @@ const reducer = (state = init, { type, payload }) => {
             return state.filter(el => el.id != payload)
 
         case INCREMANT:
-            return state.map(el=>el.id==payload?{...el,cont:el.cont+1}:el)
+            return (state.map(el=>el.id==payload?{...el,cont:el.cont+1}:el)
+            )
         
         case DECREMANT:
             return state.map(el=>el.id==payload?{...el,cont:el.cont-1}:el)
 
-        case SEARCH:
-            return state.map(el=>el.id==payload?{...el,cont:el.cont-1}:el)
 
         default:
             return state

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   MDBBtn,
   MDBCard,
@@ -18,6 +18,22 @@ import Head from "./Head";
 import { dec, del, inc } from "../redux/actions";
 export default function CartCheckout() {
     const state = useSelector(state=>state)
+    const [total, setTotal] = useState(0)
+
+const tot=()=>{
+    let price=0
+    state.map(el=>
+        price+=el.cont*el.Price
+        )
+        setTotal(price)
+}
+
+useEffect(() => {
+    
+ tot()
+}, [total,state])
+
+
     const dispatch = useDispatch()
   console.log(state)
   return (
@@ -65,7 +81,7 @@ export default function CartCheckout() {
                           <div className="def-number-input number-input safari_only">
                             <button disabled={el.cont==1} onClick={()=>dispatch(dec(el.id))} className="minus"></button>
                             <p className="quantity fw-bold text-black">{el.cont}</p>
-                            <button disabled={el.cont==10} onClick={()=>dispatch(inc(el.id))} className="plus"></button>
+                            <button onClick={()=>dispatch(inc(el.id)) } className="plus"></button>
                           </div>
                         </div>
                       </div>
@@ -87,7 +103,7 @@ export default function CartCheckout() {
                         Total:
                       </MDBTypography>
                       <MDBTypography tag="h5" className="fw-bold mb-0">
-                        0$
+                        {total}$
                       </MDBTypography>
                     </div>
                     <div
@@ -98,7 +114,7 @@ export default function CartCheckout() {
                         Total To Pay:
                       </MDBTypography>
                       <MDBTypography tag="h5" className="fw-bold mb-0">
-                        0 TND
+                      {total*3.2}TND
                       </MDBTypography>
                     </div>
                   </MDBCol>
@@ -117,6 +133,7 @@ export default function CartCheckout() {
                         type="text"
                         size="lg"
                         placeholder="1234 5678 9012 3457"
+                        required
                       />
 
                       <MDBInput
@@ -125,6 +142,7 @@ export default function CartCheckout() {
                         type="text"
                         size="lg"
                         placeholder="Full Name"
+                        required
                       />
 
                       <MDBRow>
@@ -134,9 +152,10 @@ export default function CartCheckout() {
                             label="Expiration"
                             type="text"
                             size="lg"
-                            minLength="7"
+                            minLength="5"
                             maxLength="7"
                             placeholder="MM/YYYY"
+                            required
                           />
                         </MDBCol>
                         <MDBCol md="6" className="mb-5">
@@ -148,6 +167,7 @@ export default function CartCheckout() {
                             minLength="3"
                             maxLength="3"
                             placeholder="CVV"
+                            required
                           />
                         </MDBCol>
                       </MDBRow>
