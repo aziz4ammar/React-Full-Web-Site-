@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { BrowserRouter,Link } from 'react-router-dom';
 import abb from './img/abb.png';
+import abc from './img/abc.png';
 import { useDispatch,useSelector } from 'react-redux'
 
 const Head = () => {
   const state = useSelector(state=>state)
-
+  const [text,setText] = useState("")
   return (
     <div>
       <header>
@@ -16,8 +17,7 @@ const Head = () => {
           </div>
           </Link>
           <div>
-            <input className='rbg' type="text" />
-            <button>Search</button>
+            <input className='rbg' type="text" placeholder='Search' value={text} onChange={(e)=>setText(e.target.value)}/>
           </div>
           <div>
             <ul>
@@ -27,7 +27,7 @@ const Head = () => {
             </li>
             </ul>
             <Link to="/cart">
-                <button>cart</button>
+                <img className='abca' src={abc} alt="cart" />
             </Link>
           </div>
         </nav>
